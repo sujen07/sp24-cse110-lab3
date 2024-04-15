@@ -2,48 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Meeting minutes for the Pomodoro Timer project brainstorming session.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <title>Pomodoro Timer First Brainstorm</title>
 </head>
 <body>
-<h1>Pomodoro Timer First Brainstorm</h1>
-<h2>Brainstorming Session</h2>
-<h3>Date: April 12, 2024</h3>
+  <header>
+    <h1>Pomodoro Timer First Brainstorm</h1>
+    <nav>
+      <ul>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#newBusiness">New Business</a></li>
+        <li><a href="#comments">Comments</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<h4>Attendees:</h4>
-<ul>
-  <li>Alice</li>
-  <li>Bob</li>
-  <li>Charlie</li>
-</ul>
+  <main>
+    <section>
+      <h2>Brainstorming Session</h2>
+      <h3>Date: April 12, 2024</h3>
+      <p><strong>Location:</strong> Main conference room</p>
+      <hr>
+      <h4>Attendees:</h4>
+      <ul>
+        <li><strong>Alice</strong></li>
+        <li>Bob</li>
+        <li>Charlie</li>
+      </ul>
+    </section>
 
-<h4>Agenda:</h4>
-<ol>
-  <li>Introduction to the project</li>
-  <li>Discussion of key features</li>
-  <li>Timeline planning</li>
-</ol>
+    <section id="agenda">
+      <h4>Agenda:</h4>
+      <ol>
+        <li>Introduction to the project</li>
+        <li>Discussion of key features</li>
+        <li>Timeline planning</li>
+      </ol>
+    </section>
 
-<h4>Unfinished Business:</h4>
-<p>Finalizing the UI design</p>
-<h4>New Business:</h4>
-<p>Discussing potential partnerships</p>
+    <section id="unfinishedBusiness">
+      <h4>Unfinished Business:</h4>
+      <p>Finalizing the UI design</p>
+    </section>
 
-<h4>Comments:</h4>
-<p>Need to decide on the main color theme by next meeting.</p>
+    <section id="newBusiness">
+      <h4>New Business:</h4>
+      <p>Discussing potential partnerships</p>
+    </section>
 
-<h4>Whiteboard Diagrams:</h4>
-<img src="whiteboardDesign.png" alt="Whiteboard session on architecture">
+    <section id="comments">
+      <h4>Comments:</h4>
+      <div>
+        <span><em>Charlie:</em> Need to decide on the main color theme by next meeting.</span><br>
+        <span><b>Alice:</b> Review competitive analysis by next Wednesday.</span>
+      </div>
+    </section>
 
-<h4>Meeting Audio:</h4>
-<audio controls>
-  <source src="sample_audio.mp4" type="audio/ogg">
-  Your browser does not support the audio element.
-</audio>
-<h4>Meeting Video:</h4>
-<video controls>
-  <source src="sample_video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+    <h4>Whiteboard Diagrams:</h4>
+    <img src="whiteboardDesign.png" alt="Whiteboard session on architecture">
+    <hr>
+  </main>
 
+  <footer>
+    <p>Meeting Minutes compiled by <i>Document Coordinator</i>.</p>
+    <details>
+      <summary>Meeting Recordings</summary>
+      <audio controls>
+        <source src="sample_audio.mp4" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+      <video controls>
+        <source src="sample_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </details>
+  </footer>
+
+  <aside>
+    <h4>Feedback Form</h4>
+    <form action="#">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br>
+        <label for="favorite-color">Favorite Color:</label>
+        <input type="radio" id="color_blue" name="favorite-color" value="blue" checked> Blue
+        <input type="radio" id="color_red" name="favorite-color" value="red"> Red<br>
+        <label for="subscribe">Subscribe to newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe" checked>
+      </fieldset>
+      <label for="feedback">Feedback:</label>
+      <textarea id="feedback" name="feedback"></textarea><br>
+      <label for="issue">Select an issue:</label>
+      <select id="issue" name="issue">
+        <option value="interface">Interface</option>
+        <option value="performance">Performance</option>
+        <option value="other">Other</option>
+      </select>
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </aside>
 </body>
 </html>
