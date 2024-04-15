@@ -82,18 +82,22 @@
   <aside>
     <h4>Feedback Form</h4>
     <form action="#">
-      <fieldset>
-        <legend>Personal Information</legend>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name"><br>
-        <label for="birthday">Birthday:</label>
-        <input type="date" id="birthday" name="birthday"><br>
-        <label for="favorite-color">Favorite Color:</label>
-        <input type="radio" id="color_blue" name="favorite-color" value="blue" checked> Blue
-        <input type="radio" id="color_red" name="favorite-color" value="red"> Red<br>
-        <label for="subscribe">Subscribe to newsletter:</label>
-        <input type="checkbox" id="subscribe" name="subscribe" checked>
-      </fieldset>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday"><br>
+        
+            <label for="color_blue">Favorite Color - Blue:</label>
+            <input type="radio" id="color_blue" name="favorite-color" value="blue" checked> 
+            <label for="color_red">Favorite Color - Red:</label>
+            <input type="radio" id="color_red" name="favorite-color" value="red"><br>
+        
+            <label for="subscribe">Subscribe to newsletter:</label>
+            <input type="checkbox" id="subscribe" name="subscribe" checked>
+        </fieldset>
+        
       <label for="feedback">Feedback:</label>
       <textarea id="feedback" name="feedback"></textarea><br>
       <label for="issue">Select an issue:</label>
