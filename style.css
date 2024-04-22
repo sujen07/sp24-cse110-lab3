@@ -179,7 +179,7 @@ button {
 }
 
 button:hover {
-    background-color: darken(var(--accent-color), 10%);
+    background-color: #e6a00f;
 }
 
 /* Responsive Design for Form */
