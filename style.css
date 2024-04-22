@@ -1,0 +1,201 @@
+/* General Style Settings and Variables */
+:root {
+    --primary-color: #007BFF; /* Vibrant blue, used for backgrounds and important elements */
+    --accent-color: #FFC107; /* Amber for highlights and interactive elements */
+    --background-color: #F8F9FA; /* Light grey background for general use */
+    --text-color: #343A40; /* Dark grey text for better readability */
+    --border-radius: 8px; /* Rounded corners for all box-model elements */
+    --box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    --transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Basic Reset and Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in width/height */
+    transition: var(--transition);
+}
+
+body, button, input, textarea, select {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* Header and Navigation Styles */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0.5rem 0;
+}
+
+nav ul li {
+    padding: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Section Styling with Grid and Flexbox */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin: 10px 0;
+}
+
+/* Box Model Enhancements */
+h2, h3, h4, p {
+    margin-bottom: 0.5rem;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    line-height: 1.6;
+}
+
+/* Interactive Elements: Hover and Focus */
+a:hover, button:hover, input[type="submit"]:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+    }
+    
+    nav ul li {
+      margin-bottom: 10px;
+    }
+}
+
+
+aside form {
+    border: 2px solid var(--accent-color);
+    padding: 10px;
+    border-radius: var(--border-radius);
+}
+
+/* CSS Grid for Footer */
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+
+/* New Selectors */
+:is(header, footer) a:hover {
+    text-decoration: underline;
+}
+
+/* Feedback Form Specific Styling */
+aside {
+    background-color: hsl(210, 50%, 82%);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin: 20px;
+}
+
+aside h4 {
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    font-size: 1.25em;
+}
+
+fieldset {
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+legend {
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 0 5px;
+    font-size: 1.1em;
+}
+
+aside label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-color);
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: darken(var(--accent-color), 10%);
+}
+
+/* Responsive Design for Form */
+@media (max-width: 600px) {
+    aside {
+        margin: 10px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    textarea,
+    select {
+        padding: 8px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
